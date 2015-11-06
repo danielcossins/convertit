@@ -18,15 +18,14 @@ requirejs.config({
 });
 
 requirejs(["call"], 
-  function(dependencies){
-    console.log("as;dflkj");
-    // var upload = $('#upload').val();
-    // console.log($('#go'));
-    // $('#go').on("click", function(){
-    //   var promise = call("https://api.cloudconvert.com/convert?input="+upload+"&download=inline");
-    //   // promise.then(function(data){
-    //   //   console.log(data);
-    //   // });
-    //   console.log(promise);
-    // });
+  function(call){
+    var upload = $('#upload').val();
+    console.log($('#go'));
+    $('#go').on("click", function(){
+      var promise = call("https://api.cloudconvert.com/convert?input="+upload+"&download=inline");
+      // promise.then(function(data){
+      //   console.log(data);
+      // });
+      console.log(promise);
+    });
 });
