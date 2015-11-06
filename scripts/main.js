@@ -1,5 +1,5 @@
 requirejs.config({
-  baseUrl: "./javascripts",
+  baseUrl: "./scripts",
   paths: {
     "jquery": "../lib/bower_components/jquery/dist/jquery.min",
     "jquery-ui": "../lib/bower_components/jquery-ui/jquery-ui.min",
@@ -17,6 +17,16 @@ requirejs.config({
   }
 });
 
-requirejs(["dependencies", ""], 
+requirejs(["call"], 
   function(dependencies){
+    console.log("as;dflkj");
+    // var upload = $('#upload').val();
+    // console.log($('#go'));
+    // $('#go').on("click", function(){
+    //   var promise = call("https://api.cloudconvert.com/convert?input="+upload+"&download=inline");
+    //   // promise.then(function(data){
+    //   //   console.log(data);
+    //   // });
+    //   console.log(promise);
+    // });
 });

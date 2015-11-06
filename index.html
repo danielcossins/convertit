@@ -9,14 +9,17 @@
 
 <body>
   <h1 class="middle">Convertit</h1>
-  <button class="middle btn btn-default" type="file">Upload</button>
+
+  <!-- <button class="middle btn btn-default" type="file">Upload</button> -->
   <div id="main" class="middle">
     <select>
       <option>image</option>
       <option>audio</option>
     </select>
-    <input class="middle" type="file">
+    <input id="upload" class="middle" type="file">
+    <button id="go" type="button" class="btn btn-default">Convert</button>
   </div>
-
+  
+  <script data-main="./scripts/main" src="lib/bower_components/requirejs/require.js"></script>
 </body>
 </html>
